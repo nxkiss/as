@@ -1,0 +1,38 @@
+body.server {
+    background: #111;
+    @extend .d-flex;
+    @extend .flex-column;
+    height: 100vh;
+}
+
+.server-info {
+    @extend .bg-dark;
+    @extend .text-white;
+    @extend .flex-grow-0;
+    @extend .flex-shrink-0;
+    @extend .d-flex;
+    @extend .justify-content-between;
+    @extend .p-2;
+    h5 {
+        @extend .m-0;
+        @extend .font-weight-light;
+        @extend .text-monospace;
+    }
+}
+
+.server-log {
+    @extend .list-unstyled;
+    @extend .m-0;
+    &-container {
+        @extend .p-1;
+        @extend .flex-grow-1;
+        @extend .container;
+        @extend .position-relative;
+        overflow-y: hidden;
+    }
+    & > li {
+        @extend .text-monospace;
+        @extend .text-white;
+        @extend small;
+    }
+}

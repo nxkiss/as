@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Huddlr - World chat</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/server.bundle.css">
+</head>
+
+<body class="server">
+    <div class="server-info">
+        <h5 class="server-info-ip">IP Address: {{ ipaddr }}</h5>
+        <h5 class="server-info-port">Port: {{ port }}</h5>
+    </div>
+    <div class="server-log-container">
+       <ul class="server-log">
+           {{#logs}}
+           {{{.}}}
+           {{/logs}}
+       </ul> 
+    </div>
+    <script src="/server.bundle.js"></script>
+</body>
+
+</html>
